@@ -1,0 +1,12 @@
+#! /bin/sh
+#
+# Created by configure
+
+LDFLAGS="-L/usr/lib64 -L/lib64"; export LDFLAGS
+"./configure" \
+"LDFLAGS=-L/usr/lib64 -L/lib64" \
+"--enable-so" \
+"--enable-mods-shared=all" \
+"--with-mpm=worker" \
+"--enable-nonportable-atomics=yes" \
+"$@"
